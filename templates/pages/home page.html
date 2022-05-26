@@ -1,0 +1,22 @@
+{%extends 'parts/base.html'%}
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% block content%}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css files/style.css" />
+
+</head>
+
+<body>
+    <div>
+        <a class="mydiv" href="" target="_blank">Human Resources</a>
+        <a class="mydiv" href="{% url 'index' %}" target="_blank"> Students Affairs</a>
+        <a class="mydiv" href="" target="_blank"> Higher Studies</a>
+        <a class="mydiv" href="" target="_blank"> Laboratory Tracking</a>
+    </div>
+    
+</body>
+{% endblock content%}

@@ -1,0 +1,41 @@
+{%extends 'parts/base.html'%}
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% block content%}
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Delete confirmation</title>
+    <meta name="discription" content="confirming the deleteing proccess" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css files/style.css" />
+    <script src="../js files/project.js">  </script>
+
+</head>
+<body>
+    
+        <div>
+    
+        <dialog open="true">
+            <p>
+            <p>Do you want to Confirm The Deleting Process ?
+            <p><a href="{% url 'index' %}">
+            <b><button onclick="deleteFunction()">yes</button> </b> 
+                </a>
+            </p>
+            </p>
+            <a href="{% url 'edit_student_data' %}">
+            <b><button onclick="notDeletedFunction()">no</button> </b> 
+            </a>
+         </dialog>
+    </div>
+
+</body>
+</html>
+
+{% endblock content%}
+

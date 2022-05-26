@@ -1,0 +1,22 @@
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <header>
+        <nav>
+            <li class="header">
+                <a href="{% url 'index'%}"> Student Affairs website </a> 
+            </li>
+            <li>
+                <a href="{% url 'add_student' %}"> Add new student </a>
+            </li>
+            <li>
+                <a href="{% url 'all_student_status' %}"> All Students </a>
+            </li>
+            <li>
+                <a href="{% url 'index' %}">  login </a>
+            </li>
+            <li>
+                <a href="mailto:ranahossam156@gmail.com"> Contact me </a>
+            </li>
+            </ul>
+        </nav>
+    </header>

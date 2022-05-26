@@ -1,0 +1,203 @@
+body {
+    height: 125vh;
+    margin-top: 80px;
+    padding: 30px;
+    background-size: cover;
+    font-family: Calibri;
+    background-image: url(/images/164541.png);
+}
+
+header {
+    background-color: #011627;
+    position: fixed;
+    justify-content: right;
+    left: 0;
+    right: 0;
+    top: 0px;
+    height: 90px;
+    display: inline;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+    font-weight: bold;
+    font-size:medium;
+}
+
+.header {
+    color: white;
+    justify-content: flex-start;
+    display: inline-flex;
+    font-size: xx-large;
+    font-weight: bold;
+}
+   
+
+header * {
+    display:inline
+}
+
+header li {
+    margin: 10px;
+
+}
+
+header li a {
+    color: white;
+    text-decoration:blink;
+}
+.mydiv
+{ 
+    background-color: #011627;
+    color: white;
+    padding: 90px 90px;
+    text-align: center;
+    text-decoration: none;
+   display: inline-block;
+   margin-left: 50px;
+   margin-top:50px;
+   margin-bottom: 100px;
+ margin-right: 50px;
+  
+
+}
+ .mydiv:hover
+{
+    background-color: rgb(123, 150, 156);
+
+}
+
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+   button {
+    background-color: #153652;
+    color: white;
+    padding: auto;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  } 
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color:rgb(123, 150, 156);
+  }
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+
+
+ #hi{
+    color: #3e5669;
+    text-align: center;
+    padding: 50px;
+    margin-right: 50px;
+
+} 
+#search{
+    position:fixed;
+    top: 30%;
+    left:30%;
+    
+}
+#para{
+  border: 4px solid #4083b9;
+  height: 40px;
+  width: 400px;
+  border-radius: 50px;
+  padding: 0px 10px;
+  font-size: medium;
+  color: black;
+}
+#lab{
+    color: #3e5669;
+    font-size: xx-large;
+}
+
+  
+
+
+
+  table tr:nth-child(odd) td{
+    background-color: rgb(245, 240, 240);
+}
+table tr:nth-child(even) td{
+    background-color: rgb(204, 213, 216)
+}
+table
+{
+    border:1px ;
+     border-color: rgb(0, 0, 0);
+     border-spacing:0px;
+}
+.button1 {
+  border-radius: 12px;
+  width: 25%;
+  padding: 10px;
+  float: inline-start;
+  font-size: large;
+  font-weight: 500;
+
+}
+
+.button1:hover {
+  background-color: #011627;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+#new_student_info{
+  background-color: #B9D4DB;
+  margin-left: 30%;
+  padding: 25px 15px;
+  display: block;
+  margin-right: 30%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border: 1px solid;
+  border-radius: 20px;
+  text-align:left;
+  font-size: small;
+  }
+
+  .title{
+    text-align: center;
+    margin: 10px;
+
+}
+

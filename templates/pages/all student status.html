@@ -1,0 +1,110 @@
+{%extends 'parts/base.html'%}
+
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+{% block content%}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>All students</title>
+    <meta name="discription" content="All students in a table" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css files/style.css" />
+    <script src ="../js files/project.js">
+    </script>
+</head>
+    <!-- <header>
+        <h1 id="hi">search for active students </h1>
+    </header> -->
+    <div>
+    
+        <form action="" ,method="get" >
+            <input type="search" , name="q" ,id ="search", placeholder="search">
+            <button  type="submit" id="para"> Search</button>
+        </form>
+
+    </div>
+    <div>
+        <h2>All student status</h2>
+        <form action="all student status.html" method="post">
+            <table border =1px width="100%" id="Table" >
+                <tr>
+    
+                    <th width="25">
+                        Student ID
+                    </th>
+                    <th width="25">
+                        Student name
+                    </th>
+                    <th width="25">
+                        Student level
+                    </th>
+                    <th width="10">
+                        Student status
+                    </th>
+                    <th width="25">
+                        Department
+                    </th>
+                    <th width="10">
+                        GPA
+                    </th>
+                    <th width="10">
+                        Gender
+                    </th>
+                    <th width="10">
+                        mobileNumber
+                    </th>
+                    <th width="10">
+                        
+                    </th>
+                </tr>
+                <tr>
+                    {%for student in student_list%}
+                    <td>
+                        {{student.studentID}}
+                    </td>
+                    <td>
+                        {{student.firstName}} {{student.lastName}}
+                    </td>
+                    <td>
+                        {{student.level}}
+                    </td>   
+                    <td>
+                        {{student.status}}
+                    </td>  
+                    <td>
+                        {{student.department}}
+                    </td> 
+                    <td>
+                        {{student.GPA}}
+                    </td> 
+                    <td>
+                        {{student.gender}}
+                    </td> 
+                    <td>
+                        {{student.mobileNumber}}
+                    </td> 
+                    <td>
+                         <a href="{%url 'edit_student_data' student.id%}"><button type ="button" style="background-color:rgba(151, 151, 147, 0.705); width:55px;height:30px ;border-radius:25px ;padding: 10;">
+                            Edit</button>
+                        </a>
+                        <a href="delete/{{student.studentID}}"><button type ="button" style="background-color:rgb(201, 34, 34); width:55px;height:30px ;border-radius:25px ;padding: 10;">
+                            Delete</button>
+                        </a>
+
+                        <a href="assign_department/{{student.studentID}}"><button type ="button" style="background-color:rgb(177, 197, 176); width:100px;height:40px ;border-radius:25px ;padding: 10;">
+                            Assign Department</button>
+                        </a>
+                    </td>  
+                    <br\>
+                </tr>
+                    {%endfor%}
+            </table>
+        </form>
+
+    </div>
+    </body>
+    </html>
+    {% endblock content%}

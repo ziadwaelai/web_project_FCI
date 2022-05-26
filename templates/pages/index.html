@@ -1,0 +1,72 @@
+{%extends 'parts/base.html'%}
+{%load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+   {% block content%}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Student Affairs website</title>
+    <meta name="discription" content="this website is  for student's educational system" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css files/style.css" />
+
+</head>
+<body>    
+        <!-- <script src="valid.js"></script> -->
+    
+        <!-- <div class="container">
+            <h1 class="label">User Login</h1>
+            <form class="login_form" action="all student status.html" method="post" name="form" onsubmit=" return validated()">
+                <div class="font">Email or Phone</div>
+                <input autocomplete="off" type="text" name="email">
+                <div id="email_error">Please fill up your Email or Phone</div>
+                <div class="font font2">Password</div>
+                <input type="password" name="password">
+                <div id="pass_error">Please fill up your Password</div>
+                <button type="submit">Login</button>
+            </form>
+        </div> -->
+        <!-- <script src="valid.js"></script> -->
+       <!-- <div class="grid-item">
+            <label><b>Username:</b></label>
+            <input type="text" /><br /><br />
+            <label><b>Password:</b></label>
+            <input type="password" /><br />
+            <a href="index.html">
+                <button type="button"> login</button>
+            </a>
+        </div>  -->
+    
+       <!-- <label><b>Username:</b></label>
+        <input type="text" /><br /><br />
+        <label><b>Password:</b></label>
+        <input type="password" /><br />
+        <a href="index.html">
+            <button type="button"> login</button>
+        </a> -->
+        <form method="post">
+          
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button onclick="" type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+             <div class="container" style="background-color:#f1f1f1">
+              <button id="redirect" type="button" class="cancelbtn">Cancel</button>
+              <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+            </div> 
+          </form> 
+    </body>
+
+</html>
+{% endblock content%}
